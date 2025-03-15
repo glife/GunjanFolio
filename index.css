@@ -1,0 +1,123 @@
+.desktop-4-inner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally in the column */
+  justify-content: center; /* Center the content vertically */
+  padding: 200px 43px 318px; /* Adjust padding if necessary */
+  box-sizing: border-box;
+  gap: 100px; /* Maintain or adjust gap as needed */
+  text-align: center; /* Center the text within elements */
+  font-size: var(--font-size-5xl); /* Reapplying font size */
+  color: var(--color-black); /* Reapplying text color */
+  font-family: var(--font-cormorant-garamond); /* Reapplying font family */
+}
+
+.rectangle-parent {
+  width: 800px; /* Width can be adjusted based on design needs */
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: var(--color-gray);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 90px 47px 33px; /* Adjust padding to suit */
+  box-sizing: border-box;
+  gap: var(--gap-base);
+  align-items: center; /* Aligns children (text/content) at the center */
+  margin: auto; /* This will help in centering the element */
+}
+
+.frame-item {
+  display: block; /* Changed from none to block to make it visible if needed */
+  width: 100%;
+  max-width: 100%;
+  height: auto; /* Adjust height as necessary */
+}
+
+.hello-i-am-wrapper {
+  font-size: 30px;
+  display: flex;
+  font-family: var(--font-eb-garamond); /* Reapplying font family */
+  color: black;
+  justify-content: center; /* Center the 'Hello I am' horizontally */
+  padding: 0;
+}
+
+.gunjan-daiya {
+  font-size: 70px; /* Reapplying font size */
+  font-weight: 400; /* Reapplying font weight */
+  font-family: var(--font-eb-garamond); /* Reapplying font family */
+  color: var(--color-white); /* Reapplying text color */
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); /* Reapplying text shadow */
+  text-align: center; /* Ensure all text is centered */
+}
+
+.computer-engineering-student-container {
+  font-size: 30px;
+  text-align: center; /* Ensure all text is centered */
+  font-family: var(--font-eb-garamond); /* Reapplying font family */
+}
+
+
+.video-background {
+  position: fixed; /* Fixed position to keep it in the background */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  overflow: hidden;
+  z-index: -1; /* Behind all other content */
+}
+
+#bgVideo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover; /* Ensure cover fill at all times */
+}
+
+.frame-parent {
+  position: relative;
+  z-index: 1; /* Ensure content is above the video */
+}
+
+/* Ensure other elements are properly layered above the video */
+.content, .frame-group, .frame-wrapper, .desktop-4-inner {
+  position: relative;
+  z-index: 2;
+}
+
+.sidebar {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+}
+
+.button {
+  display: block;
+  background-color: #D9D9D9;
+  color: black;
+  padding: 15px 30px;
+  margin: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  border: none;
+  border-radius: 40px; /* Creates an elliptical shape */
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+  background-color: #074808; /* Darker shade for hover effect */
+  transform: scale(1.1); /* Slightly increase the button size on hover */
+}
